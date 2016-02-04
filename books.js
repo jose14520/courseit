@@ -1,23 +1,41 @@
-var app = require('express')()
+var app = require('express')();
+var mongo = require('mongodb');
+var db;
 
 app.get('/', function (req, res) {
-    res.send({
-        test: true
+    
+  var collection = db.collection('books');
+  // Find some documents
+  collection.find({}).toArray(function(err, docs) {
+     if (err) {
+		 console.error(err);
+		return res.send({success: false });
+	 }
+	res.send({
+        success: true,
+		books: docs
     });
+  });
+});
+app.get('/:id', function (req, res) {
+    
+    var collection = db.collection('books');
+    var objId = new mongo.ObjectID(req.params.id);
+    
+   collection.findOne({ _id: objId }, function(err, doc) {
+     if (err) {
+		 console.error(err);
+		return res.send({success: false });
+	 }
+	res.send({
+        success: true,
+		book: doc
+    });
+  });
 });
 
-app.get('/1', function (req, res) {
-   res.send({
-       id: 1,
-       isbn: '123'
-   });
-});
 
-app.get('/2', function (req, res) {
-   res.send({
-       id: 2,
-       isbn: '456'
-   });
-});
-
-module.exports = app;
+module.exports = function (mongo) {
+	db = mongo;
+	return app;
+}
