@@ -136,9 +136,13 @@ img.img-circle{
 }
 
 div.add-to-my-courses{
+/*
     position: absolute;
     right: 60em;
     top: 11em;
+*/
+    margin-left:40em;
+    margin-top:-8em;
 }
 
 div.semester-dropdown{
