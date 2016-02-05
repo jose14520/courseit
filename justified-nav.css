@@ -6,6 +6,11 @@ h3.text-muted {
    color: white;
    font-size: 4em;
 }
+
+h3.top-review {
+    margin-left: 3em;
+
+}
 h4 {
     padding-top: 20px;
 }
@@ -130,8 +135,57 @@ img.img-circle{
 
 }
 
-div.dropdown{
+div.semester-dropdown{
     position: absolute;
     right:10em;
     top: 13em;
+}
+
+div.filter-dropdown{
+    position: absolute;
+    right: 20em;
+    top:16em;
+}
+
+div.pro-con{
+    /*background-color: aqua;*/
+    margin-left: 5em;
+}
+
+div.pros{
+    font-weight: bold;
+    /*background-color: yellow;
+    border: 1px solid black;*/
+    max-width:inherit;
+}
+
+div.review{
+    /*background-color: green;*/
+}
+
+ul.pros-text{
+    font-weight: normal;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+div.cons{
+    font-weight: 600;
+    /*background-color: red;
+      border: 1px solid black;*/
+    margin-bottom: 100px;
+}
+
+div.review-text{
+    word-wrap: break-word;
+    width: 81.6%;
+    margin-left: 2em;
+}
+
+div.review-header{
+    font-weight:bold;
+}
+
+div.replies{
+    text-anchor:initial;
 }
