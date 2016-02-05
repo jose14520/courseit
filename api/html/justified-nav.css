@@ -9,8 +9,6 @@ h3.text-muted {
 
 h3.top-review {
     margin-left: 3em;
- 
-
 }
 h4 {
     padding-top: 20px;
@@ -37,7 +35,7 @@ div.container{
 }
 
 .jumbotron > .active > a{
-    
+
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -110,7 +108,7 @@ div.container{
 }
 
 .input-group{
-    visibility: hidden;
+    display: none;
 }
 
 .search-school{
@@ -122,7 +120,7 @@ img.img-circle{
     width: 22px;
     /*padding-bottom: 0.2em;
     padding-right: 0.2em;
-    */
+    head
     margin-bottom: 0em;
     margin-right: 0.2em;
     margin-left: 5em;
@@ -213,7 +211,9 @@ div.past-replies{
     display:none;
 }
 
+
 h4.past-replies-header, h4.past-answers-header{
+
     font-weight: bold;
     font-size: 14px;
 
@@ -222,6 +222,7 @@ h4.past-replies-header, h4.past-answers-header{
 div.reply-button{
     max-height: 10px;
     max-width: 10px;
+
     
     margin-left: 61.5em;
     padding-bottom:-100px;
