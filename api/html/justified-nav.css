@@ -36,7 +36,7 @@ div.container{
 }
 
 .jumbotron > .active > a{
-    
+
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -109,7 +109,7 @@ div.container{
 }
 
 .input-group{
-    visibility: hidden;
+    display: none;
 }
 
 .search-school{
@@ -222,7 +222,7 @@ h4.past-replies-header{
 div.reply-button{
     max-height: 10px;
     max-width: 10px;
-    
+
     margin-left: 61.5em;
     padding-bottom:-100px;
 }
