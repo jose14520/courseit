@@ -103,9 +103,11 @@ div.container{
   }
 }
 
+
 .input-group{
-    visibility: hidden;
+    display: none;
 }
+
 
 .search-school{
     margin-right: -1em;
