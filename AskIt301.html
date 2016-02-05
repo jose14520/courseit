@@ -1,0 +1,183 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+    <script src="js/jquery-1.12.0.js"></script>
+    
+    <!---
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    -->
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!--<script src="js/updown.hs"></script>-->
+     <script src="http://assets.codepen.io/assets/editor/full/full_page_renderer-4007b37e12733f8aa788f9ec2d2a477d.js" type="text/javascript"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="masthead">
+              <h3 class="text-muted">Course It!</h3>
+          </div>
+
+          <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                  <li><a href="MyCourses.html">Check It</a></li>
+                  <li><a href="BookIt.html">Book It</a></li>
+                  <li class="active"><a href="AskIt301.html">Ask It</a></li>
+              </ul>
+
+              
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <!-- Search bar-->
+                      <div class="search-school">
+                          <input type="text" class="form-control" placeholder="Search other schools...">
+                      </div>
+                  </li>
+                  <li><a href="#">
+                      <span>
+                          
+                        <img src="fb_logo.png" class="img-circle">
+                      </span> Connect</a></li>
+                  <li><a href="#">
+                         <span class="glyphicon glyphicon-log-in">
+                         </span> Log Out</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </head>
+
+  <body>
+
+    <div class="container">
+         
+      
+      <!-- Jumbotron -->
+      <div class="course-title">
+        <h2>CSCI 301 - Software Development</h2>
+        <h3 class="top-questions">Top Questions</h3>
+          <!--Add to My Course-->
+          <div class="add-to-my-courses">
+              <p><br /><a class="btn btn-lg btn-success" href="MyCourses.html" role="button">+ Add Course</a></p>
+          </div>
+          <br /><br />
+          
+          <!-- Dropdown 1-->
+          <div class="semester-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Overall
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="course301-in-depth.html">S16 02</a></li>
+                  <li><a href="#">S16 01</a></li>
+                  <li><a href="#">F15 01</a></li>
+                 
+              </ul>
+          </div>
+          <!-- Dropdown 2-->
+          <div class="filter-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Top
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Recent</a></li>
+              </ul>
+          </div>
+        <!--Question 1-->
+         <div class="question">
+             
+             <!-- Question 1 Text-->
+             <div class="review-text">
+                 <div class="review-header">
+                    Should a robot object use the manual driver interface?
+                 </div>
+                 <div class="review-body">
+                     It seemed unclear if the robot should class should implement from the manual driver interface. If it does interface it, can it have seperate methods in order for it to count all the widgets?
+                 </div>
+                 <!-- Answer 1-->
+                 <div class="past-answers" id="past-answer1">
+                     <p>
+                         <h4 class="past-answers-header"> Replies: </h4>
+                            Since a picking up widgets requires functions from the interface, the robot has to implement it!
+                         <div class="vote circle">
+                             <div class="increment up"></div>
+                             <div class="increment down"></div>
+
+                             <div class="count">8</div>
+                         </div>
+                     </p>
+                 </div>
+                 <!-- Answer Field 1-->
+                 <div class="replies-questions">
+                     <div class="form-group">
+                         <label for="comment">Reply:</label>
+                         <textarea class="form-control" rows="5" id="reply1"></textarea>
+                     </div>
+                 </div>
+                 <!-- Answer Button 1-->
+                 <div class="reply-button" id="button1">
+                     <p><br /><a class="btn btn-lg btn-success" href="#" role="button">Post</a></p>
+                 </div>
+                 <br /><br />
+             </div>
+
+         </div>
+          
+          <br />
+
+         
+
+
+        <!-- Add Class Button-->
+        <div class="add-review">
+            <p><br /><a class="btn btn-lg btn-success" href="#" role="button">+ Add Review</a></p>
+        </div>
+        
+          <!-- Search bar-->
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search by Class ID, name, professor...">
+          </div>
+
+      </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Course It!</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
