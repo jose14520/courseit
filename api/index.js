@@ -8,12 +8,13 @@ MongoClient.connect(url, function(err, db) {
 		return console.log('Error: ', err);
 	}
 	console.log('worked');
+    
+  app.use(express.static('html'));
+  app.use('/books', require('./books')(db));
+  app.use('/courses', require('./courses')(db));
+	app.use('/questions', require('./questions')(db));
 	
-	app.use('/books', require('./books')(db));
-    app.use('/courses', require('./courses')(db));
-  	app.use('/questions', require('./questions')(db));
-	
-	app.listen(61108);
+	app.listen(3000);
 });
 
 
