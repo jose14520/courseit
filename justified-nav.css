@@ -135,6 +135,12 @@ img.img-circle{
 
 }
 
+div.add-to-my-courses{
+    position: absolute;
+    right: 60em;
+    top: 11em;
+}
+
 div.semester-dropdown{
     position: absolute;
     right:10em;
@@ -196,4 +202,23 @@ div.form-group{
 
 div.add-review{
     margin-left: 23em;
+}
+
+div.past-replies{
+    margin-left: 23em;
+    display:none;
+}
+
+h4.past-replies-header{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+div.reply-button{
+    max-height: 10px;
+    max-width: 10px;
+    
+    margin-left: 61.5em;
+    padding-bottom:-100px;
 }

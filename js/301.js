@@ -1,24 +1,24 @@
 $(document).ready(function () {
     
-    $("#reply1").on("change", function() {
+    $("#button1").on("click", function() {
         var reply1 = $("#reply1").val();
-        alert(reply1);
         $("#reply1").val('');
-        $("#reply-text1").val(reply1);
+        $("#reply1-text").text(reply1);
+        $("#past1").show();
         });
     
-    $("#reply2").on("change", function() {
+    $("#button2").on("click", function() {
         var reply2 = $("#reply2").val();
-        alert(reply2);
         $("#reply2").val('');
-        $("#reply-text2").val(reply2);
+        $("#reply2-text").text(reply2);
+        $("#past2").show();
         });
     
-    $("#reply3").on("change", function() {
+    $("#button3").on("click", function() {
         var reply3 = $("#reply3").val();
-        alert(reply3);
         $("#reply3").val('');
-        $("#reply-text3").val(reply3);
+        $("#reply3-text").text(reply3);
+        $("#past3").show();
         });
     
 });
